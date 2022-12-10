@@ -6,7 +6,7 @@ import Navbar from "./components/navbar/navbar";
 
 function App(e) {
   return (
-    <div className="container col-md-11">
+    <div className="container col-md-12">
       <Navbar />
       {/* <Home />
        <About />
@@ -52,15 +52,18 @@ function App(e) {
 
         {/* =============== row one =============================================== */}
 
-        <div className="container">
+        {/* <div className="container"> */}
           <div className="row">
             <div className="col-md-8 my-3">
               <img
                 src="https://www.oliverwyman.com/content/dam/oliver-wyman/v2/home-page/2022/nov/10-to-do-for-ceos-to-reinvent-insurance-in-2023.jpg.imgixg.wideTileV3.jpg"
-                className="img-fluid"
+                className="img-fluid card-img"
                 alt=".."
                 width={"100%"}
               />
+              {/* <div className="card-img-overlay">
+                <h5 className="card-title">Card title</h5>
+              </div> */}
             </div>
             <div className="col-md-4 my-3">
               <img
@@ -71,7 +74,7 @@ function App(e) {
               />
             </div>
           </div>
-        </div>
+        {/* </div> */}
         {/* =============== row two =============================================== */}
         <div className="container">
           <div className="row">
@@ -91,7 +94,7 @@ function App(e) {
         </div>
 
         {/* =============== row three =============================================== */}
-        <div className="container">
+        {/* <div className="container"> */}
           <div className="row">
             <div className="col-md-4 my-3">
               <img
@@ -111,10 +114,10 @@ function App(e) {
               />
             </div>
           </div>
-        </div>
+        {/* </div> */}
 
         {/* =============== row four =============================================== */}
-        <div className="container">
+        {/* <div className="container"> */}
           <div className="row">
             <div className="col-md-4 my-3">
               <img
@@ -136,66 +139,113 @@ function App(e) {
               />
             </div>
           </div>
-        </div>
+        {/* </div> */}
+
+        {/* =============================================== mind cards ====================================== */}
         <div className="container-fluid">
-          <div className="container">
+          {/* <div className="container"> */}
             <div className="header-title row">
               <h3>Meet our people</h3>
             </div>
-          </div>
-          {/* ======================================== card one ========================================= */}
-          <div className="contanier-fluid peoples">
+          {/* </div> */}
 
-            <div className="container">
-              <div className="card" >
-                <img src="https://www.oliverwyman.com/content/dam/oliver-wyman/v3/portraits/rianna-smith/rianna-smith-oliver-wyman-460x460.jpg.imgixg.profileBig.jpg" className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Rianna Smith</h5>
-                  <p className="card-text">Associate</p>
+          {/* ======================================== card one ========================================= */}
+
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <div className="card-deck">
+                  <div className="card my-2 border-out" id="style">
+                    <img
+                      className="card-img-top"
+                      src="https://www.oliverwyman.com/content/dam/oliver-wyman/v3/portraits/rianna-smith/rianna-smith-oliver-wyman-460x460.jpg.imgixg.profileBig.jpg"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">Rianna Smith</h5>
+                      <p className="card-text">Associate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* ======================================== card two ========================================= */}
+
+              <div className="col">
+                <div className="card-deck">
+                  <div className="card my-2 border-out" id="style">
+                    <img
+                      className="card-img-top"
+                      src="https://www.oliverwyman.com/content/dam/oliver-wyman/v3/portraits/syed-jafri/syed-jafri-oliver-wyman-460.jpg.imgixg.profileBig.jpg"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">Syed Jafri</h5>
+                      <p className="card-text">Partner</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* ======================================== card three ========================================= */}
+
+              <div className="col">
+                <div className="card-deck">
+                  <div className="card my-2 border-out" id="style">
+                    <img
+                      className="card-img-top"
+                      src="https://www.oliverwyman.com/content/dam/oliver-wyman/v3/portraits/deborah-oneill/deborah-oneill-oliver-wyman-460.png.imgixg.profileBig.png"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">Deborah O'Neill</h5>
+                      <p className="card-text">
+                        Partner and Head of Digital, Europe
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* ======================================== card four ========================================= */}
+
+              <div className="col">
+                <div className="card-deck">
+                  <div className="card my-2 border-out" id="style">
+                    <img
+                      className="card-img-top"
+                      src="https://www.oliverwyman.com/content/dam/oliver-wyman/v3/portraits/tek-yew-chia/tek-yew-chia-oliver-wyman-460.jpg.imgixg.profileBig.jpg"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">Tek Yew Chia</h5>
+                      <p className="card-text">
+                        Head of Insurance, Asia-Pacific and Vice Chairman,
+                        Singapore
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* ======================================== card five ========================================= */}
+
+              <div className="col">
+                <div className="card-deck">
+                  <div className="card my-2 border-out" id="style">
+                    <img
+                      className="card-img-top"
+                      src="https://www.oliverwyman.com/content/dam/oliver-wyman/v3/portraits/jessica-stansbury/jessica-stansbury-oliver-wyman-460-1.jpg.imgixg.profileBig.jpg"
+                      alt="..."
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">Jessica Stansbury</h5>
+                      <p className="card-text">Partner</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            {/* ======================================== card two ========================================= */}
-            <div className="container">
-              <div className="card" >
-                <img src="https://www.oliverwyman.com/content/dam/oliver-wyman/v3/portraits/syed-jafri/syed-jafri-oliver-wyman-460.jpg.imgixg.profileBig.jpg" className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Syed Jafir</h5>
-                  <p className="card-text">Partner</p>
-                </div>
-              </div>
-            </div>
-            {/* ======================================== card three ========================================= */}
-            <div className="container">
-              <div className="card" >
-                <img src="https://www.oliverwyman.com/content/dam/oliver-wyman/v3/portraits/deborah-oneill/deborah-oneill-oliver-wyman-460.png.imgixg.profileBig.png" className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Deborah O'Neill</h5>
-                  <p className="card-text">Partner & Head of Digital,Europe</p>
-                </div>
-              </div>
-            </div>
-            {/* ======================================== card four ========================================= */}
-            <div className="container">
-              <div className="card" >
-                <img src="https://www.oliverwyman.com/content/dam/oliver-wyman/v3/portraits/tek-yew-chia/tek-yew-chia-oliver-wyman-460.jpg.imgixg.profileBig.jpg" className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Tek Yew Chia</h5>
-                  <p className="card-text">Head of Insurance,Asia-Pasific & Vice Chairman,Singapore</p>
-                </div>
-              </div>
-            </div>
-            {/* ======================================== card five ========================================= */}
-            <div className="container">
-              <div className="card" >
-                <img src="https://www.oliverwyman.com/content/dam/oliver-wyman/v3/portraits/jessica-stansbury/jessica-stansbury-oliver-wyman-460-1.jpg.imgixg.profileBig.jpg" className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Jessica Stansbury</h5>
-                  <p className="card-text">Partner</p>
-                </div>
-              </div>
-            </div>
-            {/* ======================================== card three ========================================= */}
           </div>
         </div>
       </div>
